@@ -1,0 +1,13 @@
+{
+  "name": "frontaid-next",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^12.1.6",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
