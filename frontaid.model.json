@@ -1,6 +1,6 @@
 {
   ":name": "Example Website",
-  ":description": "Optional Description"
+  ":description": "Optional Description",
   "name": {
     ":description": "Website name",
     ":type": "line"
