@@ -7,14 +7,15 @@
   },
   "index": {
     ":description": "Content for the index page",
-    "title": {":type": "line"},
-    "text":  {":type": "text"}
+    "name": {":type": "line"},
+    "content":  {":type": "text"}
   },
-  "blog": {
-    ":description": "List of blog posts",
+  "pages": {
+    ":description": "List of pages",
     ":items": {
-      "title": {":type": "line"},
-      "text":  {":type": "text"}
+      "name": {":type": "line"},
+      "path": {":type": "line"},
+      "content":  {":type": "text"}
     }
   }
 }

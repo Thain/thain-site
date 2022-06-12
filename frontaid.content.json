@@ -1,25 +1,24 @@
 {
-  "title": "FrontAid CMS with Next.js",
+  "name": "Liam Chung // Thain",
   "index": {
-    "title": "Index Page",
+    "name": "Index Page",
     "content": "<p>Some <strong>index</strong> content...</p>"
   },
   "pages": [
     {
-      "title": "Foo Page",
+      "name": "Foo Page",
       "path": "/foo",
       "content": "<p>Foo content...</p><h2>Heading</h2><p>Some other content...</p>"
     },
     {
-      "title": "Bar Page",
+      "name": "Bar Page",
       "path": "/bar",
       "content": "<p><strong>Bar</strong> content...</p>"
     },
     {
-      "title": "Baz Page",
+      "name": "Baz Page",
       "path": "/baz",
       "content": "<p><strong>Baz</strong> content...</p>"
     }
-  ],
-  "name": "Liam Chung // Thain"
+  ]
 }

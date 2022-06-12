@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from "next/head"
 import React from 'react';
 import content from '../frontaid.content';
 
@@ -11,16 +12,12 @@ import 'jquery/dist/jquery.min.js'
 export default function MyApp({Component, pageProps}) {
   return (
       <>
-        <Head>
-          {/*gtag here*/}
-        </Head>
-
         <nav>
           <ul>
             <li><Link href="/"><a>{content.index.title}</a></Link></li>
             {content.pages.map(page =>
                 <li key={page.path}>
-                  <Link href="[...slug]" as={page.path}><a>{page.title}</a></Link>
+                  <Link href="[...slug]" as={page.path}><a>{page.name}</a></Link>
                 </li>,
             )}
           </ul>

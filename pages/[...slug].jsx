@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import content from '../frontaid.content.json';
 
+
 export default function Page({page}) {
   return (
       <>
         <Head>
-          <title>{page.title} | {content.title}</title>
+          <title>{page.name} | {content.name}</title>
         </Head>
-        <h1>{page.title}</h1>
+        <h1>{page.name}</h1>
         <div dangerouslySetInnerHTML={{__html: page.content}}></div>
       </>
   );

@@ -5,9 +5,9 @@ export default function Index() {
   return (
       <>
         <Head>
-          <title>{content.title}</title>
+          <title>{content.name}</title>
         </Head>
-        <h1>{content.index.title}</h1>
+        <h1>{content.index.name}</h1>
         <div dangerouslySetInnerHTML={{__html: content.index.content}}></div>
       </>
   );
