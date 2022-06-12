@@ -1,4 +1,20 @@
 {
-  ":name": "Mandatory Name",
+  ":name": "Example Website",
   ":description": "Optional Description"
+  "name": {
+    ":description": "Website name",
+    ":type": "line"
+  },
+  "index": {
+    ":description": "Content for the index page",
+    "title": {":type": "line"},
+    "text":  {":type": "text"}
+  },
+  "blog": {
+    ":description": "List of blog posts",
+    ":items": {
+      "title": {":type": "line"},
+      "text":  {":type": "text"}
+    }
+  }
 }
