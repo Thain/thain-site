@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import content from '../frontaid.content.json';
 
-
-export default function Page({page}) {
+export default function Page({ page }) {
+  console.log(page.name);
   return (
       <>
         <Head>
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
     const slug = page.path.split('/').slice(1);
     return {params: {slug}};
   });
-  return {paths, fallback: true};
+  return {paths, fallback: 'blocking'};
 }
 
 export async function getStaticProps({params}) {

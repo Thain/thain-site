@@ -23,6 +23,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Page({ page  }) {
+    console.log(page.name);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {
@@ -56,7 +57,7 @@ async function getStaticPaths() {
     });
     return {
         paths,
-        fallback: true
+        fallback: "blocking"
     };
 }
 async function getStaticProps({ params  }) {
