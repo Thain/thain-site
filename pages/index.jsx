@@ -7,8 +7,17 @@ export default function Index() {
         <Head>
           <title>{content.name}</title>
         </Head>
-        <h1>{content.index.name}</h1>
-        <div dangerouslySetInnerHTML={{__html: content.index.content}}></div>
+        <div id="main-content">
+          <h4 style={{color: "var(--green)", fontWeight: "bold"}}>{content.index.name}</h4>
+          <div className="header">
+            <div dangerouslySetInnerHTML={{__html: content.index.headerLine}}></div>
+            {/* image goes here */}
+            <div dangerouslySetInnerHTML={{__html: content.index.headerSubline}}></div>
+          </div>
+          <div className="green-strip">
+            <div dangerouslySetInnerHTML={{__html: content.index.greenStrip}}></div>
+          </div>
+        </div>
       </>
   );
 }

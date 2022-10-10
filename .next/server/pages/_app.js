@@ -454,7 +454,7 @@ module.exports = require("react/jsx-dev-runtime");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"Liam Chung // Thain","index":{"name":"Index Page","content":"<p>Some <strong>index</strong> content...</p>"},"blog":[{"name":"Foo Page","category":"math","image":"/image/path","slug":"/foo","content":"<p>Foo content...</p><h2>Heading</h2><p>Some other content...</p>"}]}');
+module.exports = JSON.parse('{"name":"Liam Chung // Thain","index":{"name":"Liam Chung    //    Thain","headerLine":"<h2>I am a <b>socially conscious mathematical logician,</b> <br/> aspiring to improve the accessibility <br/>of advanced education for all.</h2>","headerSubline":"<p>I am in the Master of Logic<br/> program at the <a>The ILLC</a> in Amsterdam,<br/><br/>I have a BSc. in Math and Comp Sci<br/> from <a>McGill University,</a> <br/><br/>and I did web dev in the social sector,<br/> at <a>My Media Creative.</a><p>","greenStrip":"<h3>I also really like tabletop RPGs, music, mechanical keyboards, fancy chalk, and photography. You can read about all of my random interests over on my <a>blog</a>.</h3>"},"blog":[{"name":"Foo Page","category":"math","image":"/image/path","slug":"/foo","content":"<p>Foo content...</p><h2>Heading</h2><p>Some other content...</p>"}]}');
 
 /***/ })
 

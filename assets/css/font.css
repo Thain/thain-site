@@ -39,5 +39,5 @@
 
 h1, h2, h3, h4, h5, h6, p, a, li { font-family: 'lato' }
 h1, h2 { font-weight: bold }
-h3, h4, p, a, li { font-weight: regular }
+h3, h4, p, button a, li { font-weight: normal }
 h5, h6 { font-weight: light }

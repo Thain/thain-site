@@ -39,7 +39,7 @@ h5 { font-size: calc(var(--h5) * var(--font-size)) }
 h6 { font-size: calc(var(--h6) * var(--font-size)) }
 
 /* 30 */
-p,a{ font-size: calc(var(--pa) * var(--font-size)) }
+p, button a { font-size: calc(var(--pa) * var(--font-size)) }
 
 
 
@@ -87,15 +87,15 @@ p,a{ font-size: calc(var(--pa) * var(--font-size)) }
 @media only screen and (min-width: 768px) {
   /* #main-content { width: 680px } */
   :root { --content-width: 680px }
-  :root { --font-size: 15px }
+  :root { --font-size: 16px }
 
-  :root { --h1: 3.3 }
-  :root { --h2: 2.5 }
-  :root { --h3: 2.2 }
-  :root { --h4: 1.4 }
+  :root { --h1: 2 }
+  :root { --h2: 1.75 }
+  :root { --h3: 1.5 }
+  :root { --h4: 1.25 }
   :root { --h5: 1.2 }
-  :root { --h6: 1 }
-  :root { --pa: 1.1 }
+  :root { --h6: 1.1 }
+  :root { --pa: 1 }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -104,13 +104,13 @@ p,a{ font-size: calc(var(--pa) * var(--font-size)) }
   :root { --content-width: 862px }
   :root { --font-size: 16px }
 
-  :root { --h1: 3.8 }
-  :root { --h2: 3.2 }
-  :root { --h3: 2.5 }
-  :root { --h4: 1.5 }
+  :root { --h1: 2 }
+  :root { --h2: 1.75 }
+  :root { --h3: 1.5 }
+  :root { --h4: 1.25 }
   :root { --h5: 1.2 }
-  :root { --h6: 1 }
-  :root { --pa: 1.1 }
+  :root { --h6: 1.1 }
+  :root { --pa: 1 }
 }
 
  /* Extra large devices */
@@ -119,13 +119,13 @@ p,a{ font-size: calc(var(--pa) * var(--font-size)) }
   :root { --content-width: 1130px }
   :root { --font-size: 19px }
 
-  :root { --h1: 4.3 }
-  :root { --h2: 3.5 }
-  :root { --h3: 2.8 }
-  :root { --h4: 1.54 }
-  :root { --h5: 1.38 }
-  :root { --h6: 1 }
-  :root { --pa: 1.2 }
+  :root { --h1: 2 }
+  :root { --h2: 1.75 }
+  :root { --h3: 1.5 }
+  :root { --h4: 1.25 }
+  :root { --h5: 1.2 }
+  :root { --h6: 1.1 }
+  :root { --pa: 1 }
 }
 
 /* Extra EXTRA Large devices */

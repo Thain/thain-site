@@ -1,5 +1,5 @@
 {
-  ":name": "Example Website",
+  ":name": "Site name",
   ":description": "Optional Description",
   "name": {
     ":description": "Website name",
@@ -8,7 +8,9 @@
   "index": {
     ":description": "Content for the index page",
     "name": {":type": "line"},
-    "content":  {":type": "text"}
+    "headerLine":  {":type": "text"},
+    "headerSubline":  {":type": "text"},
+    "greenStrip":  {":type": "text"}
   },
   "blog": {
     ":description": "Blog posts for the website",
