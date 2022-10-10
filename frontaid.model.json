@@ -10,11 +10,13 @@
     "name": {":type": "line"},
     "content":  {":type": "text"}
   },
-  "pages": {
-    ":description": "List of pages",
+  "blog": {
+    ":description": "Blog posts for the website",
     ":items": {
       "name": {":type": "line"},
-      "path": {":type": "line"},
+      "category": {":type": "line"},
+      "image": {":type": "line"},
+      "slug": {":type": "line"},
       "content":  {":type": "text"}
     }
   }

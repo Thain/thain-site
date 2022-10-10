@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Head from "next/head"
 import React from 'react';
 import content from '../frontaid.content';
+import { PageTransition } from 'next-page-transitions'
 
 import "../assets/css/style.css"
 import "../assets/css/font.css"
@@ -9,22 +10,30 @@ import "../assets/css/color.css"
 import "../assets/css/screen-sizes.css"
 import 'jquery/dist/jquery.min.js'
 
-export default function MyApp({Component, pageProps}) {
+export default function MyApp({Component, router, pageProps}) {
   return (
       <>
-        <nav>
-          <ul>
-            <li><Link href="/"><a>{content.index.title}</a></Link></li>
-            {content.pages.map(page =>
-                <li key={page.path}>
-                  <Link href="[...slug]" as={page.path}><a>{page.name}</a></Link>
-                </li>,
-            )}
-          </ul>
-        </nav>
-        <main>
-          <Component {...pageProps} />
-        </main>
+        <PageTransition timeout={450} classNames="page-transition">
+          <main>
+            <Component {...pageProps} key={router.route} />
+          </main>
+        </PageTransition>
+        <style jsx global>{`
+          .page-transition-enter {
+            opacity: 0;
+          }
+          .page-transition-enter-active {
+            opacity: 1;
+            transition: opacity 450ms;
+          }
+          .page-transition-exit {
+            opacity: 1;
+          }
+          .page-transition-exit-active {
+            opacity: 0;
+            transition: opacity 450ms;
+          }
+        `}</style>
       </>
   );
 }
