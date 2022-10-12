@@ -94,16 +94,12 @@ a:visited { color: inherit; text-decoration: none }
   .arrow-link::after { display: none }
 }
 
-.header {
-
-}
-
 .green-strip {
-  padding: 50px 0;
   background-color: var(--green);
   color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   position: relative;
   left: 50%; right: 50%;
@@ -134,3 +130,16 @@ a:visited { color: inherit; text-decoration: none }
 /*----------- HOME STYLING ------------- */
 /*----------- HOME STYLING ------------- */
 /*----------- HOME STYLING ------------- */
+
+.home-header {
+  display: grid;
+  row-gap: 50px;
+}
+
+.header-line { grid-area: 1 / 1 / 2 / 3 }
+.header-subline { grid-area: 2 / 2 / 3 / 3 }
+
+.header-subline {
+  width: max-content;
+  margin-left: auto;
+}

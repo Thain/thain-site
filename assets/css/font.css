@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'lato';
     src: url(../fonts/Lato-Regular.ttf);
-    font-style: regular;
+    font-style: normal;
 }
 
 @font-face {
@@ -24,18 +24,6 @@
     font-weight: bold;
 }
 
-@font-face {
-    font-family: 'lato';
-    src: url(../fonts/Lato-Light.ttf);
-    font-weight: light;
-}
-
-@font-face {
-    font-family: 'lato';
-    src: url(../fonts/Lato-LightItalic.ttf);
-    font-style: italic;
-    font-weight: light;
-}
 
 h1, h2, h3, h4, h5, h6, p, a, li { font-family: 'lato' }
 h1, h2 { font-weight: bold }

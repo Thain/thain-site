@@ -116,7 +116,7 @@ p, button a { font-size: calc(var(--pa) * var(--font-size)) }
  /* Extra large devices */
 @media only screen and (min-width: 1200px) {
   /* #main-content { width: 1050px } */
-  :root { --content-width: 1130px }
+  :root { --content-width: 1030px }
   :root { --font-size: 19px }
 
   :root { --h1: 2 }
