@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import content from '../frontaid.content';
 
-import { Nav, Footer, Layout, Spacer, Divider } from "../components"
+import { Nav, Footer, Layout, Spacer } from "../components"
 
 export default function Index() {
   return (

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import content from '../frontaid.content.json';
 import Link from "next/link"
 import { Seo } from "./seo"
 import { useRouter } from "next/router";
@@ -31,7 +32,7 @@ export const Nav = (props) => {
           <nav>
             <ul>
               <li><Link href="/"><a>{content.index.title}</a></Link></li>
-              {content.pages.map(page =>
+              {content.blog.map(page =>
                   <li key={page.path}>
                     <Link href="[...slug]" as={page.path}><a>{page.name}</a></Link>
                   </li>,
