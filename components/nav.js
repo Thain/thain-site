@@ -7,17 +7,6 @@ import { useRouter } from "next/router";
 export const Nav = (props) => {
   const router = useRouter();
 
-  var menuColor; var logoColor;
-  if(props.isBlack) { menuColor = "menu menu-black"; logoColor = "#000000" }
-  else { menuColor = "menu menu-white"; logoColor = "#FFFFFF" }
-
-  var homeClass = (props.active == "home") ? "menu-active" : "";
-  var workClass = (props.active == "work") ? "menu-active" : "";
-  var servClass = (props.active == "services") ? "menu-active" : "";
-  var aboutClass = (props.active == "about") ? "menu-active" : "";
-  var ideasClass = (props.active == "ideas") ? "menu-active" : "";
-  var contactClass = (props.active == "contact") ? "menu-active" : "";
-
   const [navbarOpen, setNavbarOpen] = useState(false);
   const handleToggle = () => {
     setNavbarOpen(!navbarOpen)
@@ -28,42 +17,12 @@ export const Nav = (props) => {
     <nav className="topbar">
     <Seo seo={props.seo} />
 
+          <h4 style={{color: "var(--green)", fontWeight: "bold"}}>{content.index.name}</h4>
 
           <nav>
             <ul>
-              <li><Link href="/"><a>{content.index.title}</a></Link></li>
-              {content.blog.map(page =>
-                  <li key={page.path}>
-                    <Link href="[...slug]" as={page.path}><a>{page.name}</a></Link>
-                  </li>,
-              )}
             </ul>
           </nav>
-
-       <div className={menuColor + " reg"}>
-          <ul>
-            <li className={workClass}>
-              <Link href={`/work`}>
-                <a className="">Work</a>
-              </Link>
-            </li>
-            <li className={servClass}>
-              <Link href={`/services`}>
-                <a className="">Services</a>
-              </Link>
-            </li>
-            <li className={aboutClass}>
-              <Link href={`/about`}>
-                <a className="">About</a>
-              </Link>
-            </li>
-            <li className={contactClass}>
-              <Link href={`/contact`}>
-                <a className="">Contact</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
 
         <div onClick={handleToggle} className="hamburger mobile">
           <svg height="100%" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +36,7 @@ export const Nav = (props) => {
 
       </nav>
 
-      <div id="nav-overlay" className={ navbarOpen ? "nav-open" : "nav-close" }>
+      <div id="nav-overlay" className={ !navbarOpen ? "nav-close" : "nav-open" }>
         <div onClick={handleToggle} className="hamburger-x">
           <svg height="100%" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M29.25 9.75L9.75 29.25" stroke="#E26E4B" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -85,33 +44,7 @@ export const Nav = (props) => {
           </svg>
         </div>
         <div className="nav-overlay-menu">
-          <ul>
-            <li className={homeClass}>
-              <Link href={`/`}>
-                <a className="">Home</a>
-              </Link>
-            </li>
-            <li className={workClass}>
-              <Link href={`/work`}>
-                <a className="">Work</a>
-              </Link>
-            </li>
-            <li className={servClass}>
-              <Link href={`/services`}>
-                <a className="">Services</a>
-              </Link>
-            </li>
-            <li className={aboutClass}>
-              <Link href={`/about`}>
-                <a className="">About</a>
-              </Link>
-            </li>
-            <li className={contactClass}>
-              <Link href={`/contact`}>
-                <a className="">Contact</a>
-              </Link>
-            </li>
-          </ul>
+          {/* nav menu goes here */}
         </div>
       </div>
     </>

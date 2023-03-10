@@ -7,63 +7,30 @@ export const Footer = ({ }) => {
 
   return (
       <nav className="footer">
-        <div className="menu">
+        <div className="info">
           <ul>
             <li>
-               <a className="dorange">Navigation</a>
+              <h4>Liam Chung &nbsp;&nbsp;&nbsp; // &nbsp;&nbsp;&nbsp; Thain</h4>
             </li>
-            <li className={router.pathname.startsWith("/work") ? "menu-active" : ""}>
-              <Link href={`/work`}>
-                <a className="">Work</a>
-              </Link>
-            </li>
-            <li className={router.pathname.startsWith("/services") ? "menu-active" : ""}>
-              <Link href={`/services`}>
-                <a className="">Services</a>
-              </Link>
-            </li>
-            <li className={router.pathname.startsWith("/about") ? "menu-active" : ""}>
-              <Link href={`/about`}>
-                <a className="">About</a>
-              </Link>
-            </li>
-            <li className={router.pathname.startsWith("/ideas") ? "menu-active" : ""}>
-              <Link href={`/ideas`}>
-                <a className="">Ideas</a>
-              </Link>
-            </li>
-            <li className={router.pathname.startsWith("/contact") ? "menu-active" : ""}>
-              <Link href={`/contact`}>
-                <a className="">Contact</a>
-              </Link>
+            <li>
+              <p>
+                Made in React in March 2023<br/>
+                Updated March 9th, 2023
+              </p>
             </li>
           </ul>
         </div>
 
-        <div className="socials">
+        <div className="links">
           <ul>
             <li>
-               <a className="dorange">Social</a>
+              <p>Email: lwalkerchung [at] gmail [dot] com</p>
             </li>
             <li>
-              <Link href={`https://www.instagram.com/mymediacreative/`}>
-                <a className="">Instagram</a>
-              </Link>
+              <p>CV: <a>here</a></p>
             </li>
             <li>
-              <Link href={`https://www.linkedin.com/company/my-media-creative/mycompany/`}>
-                <a className="">LinkedIn</a>
-              </Link>
-            </li>
-            <li>
-              <Link href={`https://www.youtube.com/channel/UCBtnLqiba6ACrA63AHFTMUw`}>
-                <a className="">YouTube</a>
-              </Link>
-            </li>
-            <li>
-              <Link href={`https://www.facebook.com/mymediacreativegroup/`}>
-                <a className="">Facebook</a>
-              </Link>
+              <p> Pronouns: he/they </p>
             </li>
           </ul>
         </div>
