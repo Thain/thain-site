@@ -185,12 +185,12 @@ ul { list-style-type: none; padding-left: 0 }
 
 .landing-con {
   display: grid;
-  grid-template-columns: 3fr 5fr;
+  grid-template-columns: 2fr 1fr 4fr;
   column-gap: 30px;
 }
 
 .landing-img { grid-column: 1 / 2 }
-.landing-text { grid-column: 2 / 3 }
+.landing-text { grid-column: 3 / 4 }
 
 .landing-text {
   display: flex;
