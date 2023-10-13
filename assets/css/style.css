@@ -14,6 +14,12 @@ a:hover { cursor: pointer }
 
 /* * { position: relative }*/
 html { margin-top: 0 !important }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 /* *:focus { outline: 0 !important; text-decoration: none !important } */
 /* *:hover { outline: 0 !important; text-decoration: none !important } */
 
@@ -184,9 +190,7 @@ ul { list-style-type: none; padding-left: 0 }
 /*----------- HOME STYLING ------------- */
 
 .landing-con {
-  display: grid;
-  grid-template-columns: 2fr 1fr 4fr;
-  column-gap: 30px;
+  text-align:center;
 }
 
 .landing-img { grid-column: 1 / 2 }
@@ -210,7 +214,13 @@ ul { list-style-type: none; padding-left: 0 }
 }
 
 .triple-icon {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.triple-icon > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .triple-text {}
 
