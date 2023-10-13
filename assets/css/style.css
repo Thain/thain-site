@@ -61,7 +61,7 @@ ul { list-style-type: none; padding-left: 0 }
   position: relative;
   padding-bottom: 2px;
   padding-right: 28px;
-  transition: .2s ease-out
+  transition: .2s ease-out;
 }
 
 .arrow-link::after {
@@ -77,7 +77,7 @@ ul { list-style-type: none; padding-left: 0 }
   margin-top: auto; margin-bottom: auto; top: 0; bottom: 0
 }
 .arrow-link:hover::after { transform: translateX(14px); }
-.arrow-link.green::after { filter: invert(51%) sepia(27%) saturate(718%) hue-rotate(96deg) brightness(97%) contrast(91%) }
+.arrow-link.green::after { filter: brightness(0) saturate(100%) invert(27%) sepia(10%) saturate(2718%) hue-rotate(100deg) brightness(88%) contrast(90%); }
 
 @media only screen and (max-width: 767px) {
   .arrow-link {
@@ -95,7 +95,7 @@ ul { list-style-type: none; padding-left: 0 }
 
 .green-strip {
   background-color: var(--green);
-  color: white;
+  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -172,11 +172,11 @@ ul { list-style-type: none; padding-left: 0 }
   position:absolute;
   height: max-content;
   width: max-content;
-  color: white;
+  color: var(--white);
   text-align: right;
 }
 .nav-overlay-menu li { margin-bottom: 20px }
-.nav-overlay-menu a { font-size: 40px; color: white }
+.nav-overlay-menu a { font-size: 40px; color: var(--white) }
 .nav-overlay-menu .menu-active a { font-style: italic; color: var(--dorange) !important }
 
 /*----------- HOME STYLING ------------- */
@@ -185,12 +185,22 @@ ul { list-style-type: none; padding-left: 0 }
 
 .landing-con {
   display: grid;
-  grid-template-columns: 4fr 5fr;
-  column-gap: 20px;
+  grid-template-columns: 3fr 5fr;
+  column-gap: 30px;
 }
 
 .landing-img { grid-column: 1 / 2 }
 .landing-text { grid-column: 2 / 3 }
+
+.landing-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing-img img {
+  border-radius: 20px;
+}
 
 .triple-line {
   display: grid;
@@ -199,7 +209,9 @@ ul { list-style-type: none; padding-left: 0 }
   column-gap: 50px;
 }
 
-.triple-icon {}
+.triple-icon {
+  text-align: center;
+}
 .triple-text {}
 
 .triple-text a {
