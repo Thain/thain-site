@@ -1,7 +1,7 @@
 import Head from "next/head"
 
 export const Seo = ({ seo }) => {
-    const siteName = "Liam Chung // Thain";
+    const siteName = "Liam Chung";
     const fullSeo = {
         // Page title
         metaTitle: `${seo.title} | ${siteName}`,
