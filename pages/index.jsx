@@ -21,7 +21,7 @@ export default function Index() {
             </div>
             <div className="landing-text">
               <h1 style={{fontWeight: "normal"}}>Hi, I'm Liam.</h1>
-              <h3>a <b>mathematical logician</b> <br/>and <b>programmer;</b></h3>
+              <h3>a <b>mathematical logician</b> <br/>and <b>programmer</b></h3>
               <h3>with a passion for making <br/> complex ideas <b>more accessible.</b>
               </h3>
             </div>
